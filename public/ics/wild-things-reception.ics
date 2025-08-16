@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//KAA Improved//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:wild-things-prebuilt@kaa
+DTSTAMP:20250802T140000
+DTSTART;TZID=America/Indiana/Indianapolis:20250802T140000
+DTEND;TZID=America/Indiana/Indianapolis:20250802T150000
+SUMMARY:Wild Things — Reception
+DESCRIPTION:Opening reception at Kokomo Art Center.
+LOCATION:Kokomo Art Center, 525 W Ricketts St, Kokomo, IN 46902
+END:VEVENT
+END:VCALENDAR

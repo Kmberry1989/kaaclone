@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KAA — Accessible Demo</title>
+  <meta name="description" content="Accessible, SEO-friendly demo of the Kokomo Art Association website." />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Kokomo Art Association",
+  "url": "https://example.org",
+  "logo": "https://example.org/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/KokomoArtAssociation",
+    "https://www.instagram.com/kokomoartassociation/"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "210 N Main St",
+    "addressLocality": "Kokomo",
+    "addressRegion": "IN",
+    "postalCode": "46901",
+    "addressCountry": "US"
+  }
+}</script>
+</head>
+<body>
+
+<header class="header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">Kokomo Art Association</div>
+      <div class="links">
+        <a data-file="index.html" href="index.html">Home</a>
+        <a data-file="artworks-gallery.html" href="artworks-gallery.html">Artworks Gallery</a>
+        <a data-file="kokomo-art-center.html" href="kokomo-art-center.html">Kokomo Art Center</a>
+        <a data-file="classes.html" href="classes.html">Classes</a>
+        <a data-file="artists.html" href="artists.html">Artists</a>
+        <a data-file="about.html" href="about.html">About</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container">
+      <h1>Explore Our Galleries & Events</h1>
+      <p class="lede">This is a rebuilt, accessible demo of the KAA website. No images-of-text, consistent layout, and one-click calendar saves.</p>
+      <div class="btnrow">
+        <a class="btn" href="artworks-gallery.html">See Artworks Gallery</a>
+        <a class="btn secondary" href="kokomo-art-center.html">Visit Kokomo Art Center</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="events">
+    <h2 id="events">Current & Upcoming</h2>
+    <div class="grid">
+      <!-- Event 1: Wild Things -->
+      <article class="card" itemscope itemtype="https://schema.org/Event">
+        <img class="aspect-16x9" src="public/images/wild-things.svg" alt="Painting of meerkats from 'Wild Things' exhibition">
+        <div class="pad">
+          <p class="kicker" itemprop="location" itemscope itemtype="https://schema.org/Place">
+            <span itemprop="name">Kokomo Art Center</span>
+          </p>
+          <h3 itemprop="name">Wild Things — Robin Coyner</h3>
+          <p class="meta">
+            <time itemprop="startDate" datetime="2025-08-02T13:00:00-04:00">Opens Aug 2, 2025</time> –
+            <time itemprop="endDate" datetime="2025-08-30T16:00:00-04:00">Aug 30, 2025</time> • Tue–Sat 1–4 pm
+          </p>
+          <div class="btnrow">
+            <button class="btn ghost" onclick="KAA.downloadICS({
+              uid:'wild-things@kaa',
+              title:'Wild Things — Robin Coyner (Reception)',
+              start:'20250802T140000',
+              end:'20250802T150000',
+              location:'Kokomo Art Center, 525 W Ricketts St, Kokomo, IN 46902',
+              description:'Opening reception at Kokomo Art Center — chat with the artist.'
+            }, 'wild-things-reception.ics')">Add to Apple/Outlook</button>
+            <a class="btn" target="_blank"
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wild+Things+Reception&dates=20250802T180000Z/20250802T190000Z&location=Kokomo+Art+Center%2C+525+W+Ricketts+St%2C+Kokomo%2C+IN&details=Opening+reception+at+Kokomo+Art+Center">
+              Add to Google</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Event 2: Halloween Junk Journaling (recurring) -->
+      <article class="card" itemscope itemtype="https://schema.org/Event">
+        <img class="aspect-16x9" src="public/images/junk-journal.svg" alt="Colorful papers and journals with Halloween motifs">
+        <div class="pad">
+          <p class="kicker">Artworks Gallery</p>
+          <h3 itemprop="name">Halloween Junk Journaling (4 Saturdays)</h3>
+          <p class="meta">Saturdays in September • 12–2 pm • $50 (all 4)</p>
+          <div class="btnrow">
+            <button class="btn ghost" onclick="KAA.downloadICS({
+              uid:'halloween-junk@kaa',
+              title:'Halloween Junk Journaling (Sept Saturdays)',
+              start:'20250906T120000',
+              end:'20250906T140000',
+              location:'Artworks Gallery, 210 N Main St, Kokomo, IN 46901',
+              description:'Four-week series led by Vivian Bennett. Meets 9/6, 9/13, 9/20, 9/27.',
+            }, 'halloween-junk-series.ics')">Add to Apple/Outlook</button>
+            <a class="btn" target="_blank"
+               href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Halloween+Junk+Journaling&dates=20250906T160000Z/20250906T180000Z&location=Artworks+Gallery%2C+210+N+Main+St%2C+Kokomo%2C+IN&details=Series%20meets%209%2F6%2C%209%2F13%2C%209%2F20%2C%209%2F27.">
+               Add to Google</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Event 3: Senior Cords Exhibit (accessible text version) -->
+      <article class="card">
+        <img class="aspect-16x9" src="public/images/senior-cords.svg" alt="Historic senior corduroy garments exhibit">
+        <div class="pad">
+          <p class="kicker">Artworks Gallery</p>
+          <h3>Senior Cords Preview — Howard County Historical Society</h3>
+          <p class="meta">On view in July–August • 210 N Main St, Kokomo</p>
+          <p>Do you remember senior cords? Originating at Purdue University, seniors decorated corduroy garments with symbols representing their lives. HCHS is seeking cords from all Howard County high schools for a future exhibit.</p>
+          <div class="btnrow">
+            <a class="btn" href="mailto:info@howardcountymuseum.org?subject=Senior%20Cords%20Donation">Contact HCHS</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h3 class="visually-hidden">About KAA</h3>
+        <p>Bringing Art to the Community, Bringing the Community to Art.</p>
+        <small>210 N Main St, Kokomo, IN • (765) 459-4579</small>
+      </div>
+      <div>
+        <h3 class="visually-hidden">Hours</h3>
+        <small>Artworks Gallery: Mon–Fri 12–4, Sat 11–3<br>
+        Kokomo Art Center: Tue–Sat 1–4 (Mar–Nov)</small>
+      </div>
+      <div>
+        <h3 class="visually-hidden">Connect</h3>
+        <a href="#" aria-label="Facebook">Facebook</a> ·
+        <a href="#" aria-label="Instagram">Instagram</a> ·
+        <a href="mailto:info@kokomoart.org">Email</a>
+      </div>
+    </div>
+    <hr class="sep">
+    <small>© Kokomo Art Association — accessible demo build</small>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

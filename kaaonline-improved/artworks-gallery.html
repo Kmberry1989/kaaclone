@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Artworks Gallery — KAA Demo</title>
+<meta name="description" content="Artworks Gallery page (accessible demo)." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">Kokomo Art Association</div>
+      <div class="links">
+        <a data-file="index.html" href="index.html">Home</a>
+        <a data-file="artworks-gallery.html" href="artworks-gallery.html">Artworks Gallery</a>
+        <a data-file="kokomo-art-center.html" href="kokomo-art-center.html">Kokomo Art Center</a>
+        <a data-file="classes.html" href="classes.html">Classes</a>
+        <a data-file="artists.html" href="artists.html">Artists</a>
+        <a data-file="about.html" href="about.html">About</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+<h1>Artworks Gallery</h1>
+<p>Exhibitions, calls, and opportunities — rebuilt as accessible HTML (no images-of-text).</p>
+<div class="grid">
+  <article class="card"><img class="aspect-16x9" src="public/images/butter.svg" alt="Painting titled Butter by Brandon C. Bass">
+    <div class="pad"><p class="kicker">Guest Artist</p><h3>Brandon C. Bass — “Butter”</h3>
+    <p class="meta">Available for purchase • Inquire in gallery</p></div></article>
+  <article class="card"><img class="aspect-16x9" src="public/images/community-exhibit.svg" alt="Paint, brushes, and frames on a white table">
+    <div class="pad"><p class="kicker">Call for Art</p><h3>2nd Annual Community Art Exhibit</h3>
+    <p class="meta">Sept 5–Oct 31 • Drop off one piece on Aug 30, 11–3 pm • All mediums accepted • No membership required</p>
+    <div class="btnrow"><a class="btn" href="#" aria-disabled="true">Registration Form (demo)</a></div></div></article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h3 class="visually-hidden">About KAA</h3>
+        <p>Bringing Art to the Community, Bringing the Community to Art.</p>
+        <small>210 N Main St, Kokomo, IN • (765) 459-4579</small>
+      </div>
+      <div>
+        <h3 class="visually-hidden">Hours</h3>
+        <small>Artworks Gallery: Mon–Fri 12–4, Sat 11–3<br>
+        Kokomo Art Center: Tue–Sat 1–4 (Mar–Nov)</small>
+      </div>
+      <div>
+        <h3 class="visually-hidden">Connect</h3>
+        <a href="#" aria-label="Facebook">Facebook</a> ·
+        <a href="#" aria-label="Instagram">Instagram</a> ·
+        <a href="mailto:info@kokomoart.org">Email</a>
+      </div>
+    </div>
+    <hr class="sep">
+    <small>© Kokomo Art Association — accessible demo build</small>
+  </div>
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

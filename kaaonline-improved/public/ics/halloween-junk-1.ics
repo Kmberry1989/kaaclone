@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//KAA Improved//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:halloween-junk-1@kaa
+DTSTAMP:20250906T120000
+DTSTART;TZID=America/Indiana/Indianapolis:20250906T120000
+DTEND;TZID=America/Indiana/Indianapolis:20250906T140000
+SUMMARY:Halloween Junk Journaling (Session 1/4)
+DESCRIPTION:Part of the four-week series led by Vivian Bennett.
+LOCATION:Artworks Gallery, 210 N Main St, Kokomo, IN 46901
+END:VEVENT
+END:VCALENDAR

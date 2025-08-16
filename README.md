@@ -1,7 +1,7 @@
 # KAAOnline — Accessible Demo (Static Site)
 
 This repo demonstrates how to rebuild the KAA site using accessible, SEO‑friendly HTML (no images-of-text), consistent layout, and modern UX touches like one‑click calendar saves.
-
+..
 ## Features
 - **Semantic HTML** and skip links
 - **Consistent header/footer** and card grid

@@ -9,7 +9,7 @@ This repo demonstrates how to rebuild the KAA site using accessible, SEO‑frien
 - **JSON‑LD** for Organization and Events
 - **Alt text for all images**
 - **No blocking scripts**; fast-rendering pages
-
+..
 ## Run locally
 
 ### Quickest (Python)
